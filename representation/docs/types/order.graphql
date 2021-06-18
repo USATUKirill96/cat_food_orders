@@ -1,0 +1,16 @@
+type Order {
+    id : ID!
+    createdAt : Datetime!
+    userId : ID!
+    payed: Boolean!
+    status: OrderStatus!
+    items: [Item]
+}
+
+
+enum OrderStatus {
+    NEW
+    ACCEPTED
+    READY
+    DELIVERED
+}

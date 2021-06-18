@@ -1,0 +1,8 @@
+input CreateOrderInput {
+    userId: String!,
+    items: [ItemInput!]!
+}
+input ItemInput {
+    detailId: ID!
+    quantity: Int!
+}

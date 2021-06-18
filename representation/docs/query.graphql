@@ -1,0 +1,4 @@
+type Query {
+    orders: [Order]
+    details: [Detail]
+}
